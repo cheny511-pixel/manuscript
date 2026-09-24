@@ -57,8 +57,12 @@ p strong {
 
 }
 
+.article_nav a{
+	color:#ffdcdc;
+}
+
 blockquote p {
-	color:#e1e1e1;
+	color:#f8f1f1;
 	font-family: "Finlandica Text", sans-serif;
 	font-optical-sizing: auto;
 	font-size: 2rem;
