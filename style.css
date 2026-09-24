@@ -23,7 +23,7 @@ h1 em {
 }
 
 h2 {
-	color: #ffffff;
+	color: #ffd1d1;
 	font-family: "Finlandica Text", sans-serif;
 	font-optical-sizing: auto;
 	font-size: 2rem;
@@ -32,7 +32,7 @@ h2 {
 	}
 
 p {
-	color:#f0eee3;
+	color:#fff6ee;
 	font-family: "Lora", serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
@@ -48,7 +48,7 @@ p strong {
 }
 
 .dek {
-	color:#e1e1e1;
+	color:#e0ffd1;
 	font-family: "Finlandica Text", sans-serif;
 	font-optical-sizing: auto;
 	font-size: 1.3rem;
@@ -58,7 +58,7 @@ p strong {
 }
 
 .article_nav a{
-	color:#ffdcdc;
+	color:#d1ea81;
 }
 
 blockquote p {
