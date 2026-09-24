@@ -10,7 +10,7 @@ h1{
 	font-optical-sizing: auto;
 	font-weight: 500;
 	font-style: normal;
-	letter-spacing: 0.4rem
+	letter-spacing: 0.4rem;
 }
 
 h1 em {
@@ -54,9 +54,10 @@ p {
 }
 
 p strong {
+	color:#f2ff8c;
 	font-family: "Finlandica Text", sans-serif;
 	font-optical-sizing: auto;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 2rem;
 	letter-spacing: 0.2em;
 }
@@ -79,9 +80,11 @@ ul {
 }
 
 a{
-	color: #f3ffd8;
+	color: #e2ffc7;
 	font-family: "Finlandica Text", sans-serif;
 	font-weight: 600;
 }
 
-
+.time-reference{
+	color:#f2ff8c;
+}
