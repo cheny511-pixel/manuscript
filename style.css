@@ -85,6 +85,11 @@ a{
 	font-weight: 600;
 }
 
+a:hover {
+	color: red;
+    font-size: 3rem;
+}
+
 .time-reference{
 	color:#f2ff8c;
 }
