@@ -86,10 +86,10 @@ a{
 }
 
 a:hover {
-	color: red;
-    font-size: 3rem;
+	color: rgb(169, 255, 236);
+    font-size: 1rem;
 }
 
 .time-reference{
-	color:#f2ff8c;
+	color:#bef2ff;
 }
