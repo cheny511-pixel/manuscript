@@ -94,6 +94,7 @@ a:hover {
 	color:#daff7d;
 }
 
-article:target {
-	background: rgb(68, 17, 7);
+article:target p,
+article:target strong {
+	color:#ffa200;
 }
