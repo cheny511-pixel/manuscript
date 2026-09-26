@@ -93,3 +93,7 @@ a:hover {
 .time-reference{
 	color:#daff7d;
 }
+
+article:target {
+	background: rgb(68, 17, 7);
+}
