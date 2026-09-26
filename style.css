@@ -96,5 +96,5 @@ a:hover {
 
 article:target p,
 article:target strong {
-	color:#ffa200;
+	color:rgb(169, 255, 236);
 }
