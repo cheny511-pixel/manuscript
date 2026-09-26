@@ -79,10 +79,14 @@ ul {
     line-height: 1.5;
 }
 
-a{
+a {
 	color: #e2ffc7;
 	font-family: "Finlandica Text", sans-serif;
 	font-weight: 600;
+}
+
+a:visited {
+	color: rgb(128, 255, 0);
 }
 
 a:hover {
@@ -90,11 +94,20 @@ a:hover {
     font-size: 1rem;
 }
 
-.time-reference{
-	color:#daff7d;
+a:active {
+	color: rgb(178, 169, 255);
+	background: black;
+}
+
+body:has(a:active){
+	background: black;
 }
 
 article:target p,
 article:target strong {
 	color:rgb(169, 255, 236);
+}
+
+.time-reference{
+	color:#daff7d;
 }
