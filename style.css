@@ -28,22 +28,33 @@ h1 {
 }
 
 .dek {
-	color: var(--color-secondary);
+	color: var(--color-accent);
 	font-family: var(--font-family);
 	font-weight: 500;
 	font-style: normal;
 	font-size: calc(var(--font-size)*1.7);
 	text-align: center;
-	margin-block-start: var(--font-size);
-	margin-block-end: calc(var(--font-size)*2);
+	margin-block: var(--font-size);
+	margin-inline: calc(var(--font-size)*3);
+	padding-block: var(--font-size);
+	border-block: calc(var(--font-size)*0.2) solid var(--color-fg);
 }
 
 dl{
 	text-align: center;
+	margin-block: var(--font-size);
 }
 
 dt, dd {
     display: inline-block;
+	font-weight: 500;
+}
+
+#published::before {
+    content: "·";
+	margin-inline-end: 0.4em;
+}
+
 }
 
 h2 {
