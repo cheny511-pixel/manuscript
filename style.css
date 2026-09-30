@@ -17,6 +17,14 @@ body {
 	background-color: var(--color-bg);
 }
 
+.op-ed{
+	text-align: center;
+	margin-block-start: var(--font-size);
+
+	color: var(--color-accent);
+	font-weight: 600;
+}
+
 h1 {
 	color: var(--color-accent);
 	font-family: var(--font-family-title);
@@ -46,7 +54,7 @@ dl{
 }
 
 dt, dd {
-    display: inline-block;
+	display: inline-block;
 	font-weight: 500;
 }
 
@@ -55,9 +63,27 @@ dt, dd {
 	margin-inline-end: 0.4em;
 }
 
+#reading-aiga{
+	margin-block-end: var(--font-size);
+
+}
+
+main p{
+	margin-block-end: var(--font-size);
+}
+
+nav {
+	text-align: center;
+}
+
+li{
+	display: inline-block;
 }
 
 h2 {
+	text-align: center;
+	border-block-end:calc(var(--font-size)*0.5)double var(--color-fg);
+	margin-inline: var(--font-size);
 	color: var(--color-accent);
 	font-family: var(--font-family-title);
 	font-weight: 400;
