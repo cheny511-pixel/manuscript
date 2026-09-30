@@ -4,6 +4,7 @@
 	--color-accent: #cf3b08 /* 紅橘 */;
 
 	--color-fg: black;
+	--color-fg-light: #666;
 	--color-light: white;
 
 	--font-family: "Finlandica Text", sans-serif;
@@ -15,6 +16,7 @@
 body {
 	color: var(--color-fg);
 	background-color: var(--color-bg);
+	margin-inline: calc(var(--font-size)*6);
 }
 
 .op-ed{
@@ -40,17 +42,16 @@ h1 {
 	font-family: var(--font-family);
 	font-weight: 500;
 	font-style: normal;
-	font-size: calc(var(--font-size)*1.7);
+	font-size: calc(var(--font-size)*1.6);
 	text-align: center;
 	margin-block: var(--font-size);
-	margin-inline: calc(var(--font-size)*3);
-	padding-block: var(--font-size);
+	padding-block: calc(var(--font-size)*1.5);
 	border-block: calc(var(--font-size)*0.2) solid var(--color-fg);
 }
 
 dl{
 	text-align: center;
-	margin-block: var(--font-size);
+	margin-block: calc(var(--font-size)*2);
 }
 
 dt, dd {
@@ -80,6 +81,20 @@ li{
 	display: inline-block;
 }
 
+blockquote{
+	font-size: calc(var(--font-size)*2.5);
+	font-weight:700;
+	margin-inline-start: calc(var(--font-size)*2.5);
+	margin-block: calc(var(--font-size)*2);
+	border-inline-start: calc(var(--font-size)*0.5) double var(--color-accent);
+	padding-inline-start:calc(var(--font-size)*2);
+	padding-block: var(--font-size);
+}
+
+mark {
+    background-color: var(--color-secondary);
+}
+
 h2 {
 	text-align: center;
 	border-block-end:calc(var(--font-size)*0.5)double var(--color-fg);
@@ -90,5 +105,8 @@ h2 {
 	font-style: normal;
 	font-size: calc(var(--font-size)*3);
 }
+
+em {
+	color: var(--font-color-accent)
 
 
