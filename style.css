@@ -1,7 +1,11 @@
 :root{
-	--color-primary: ;
-	--color-secondary: ;
-	--color-accent: ;
+	--color-bg: #e9e7cc /* 米白 */;
+	--color-secondary: #dd7a5a /* 珊瑚橘 */;
+	--color-accent: #cf3b08 /* 紅橘 */;
+
+	--color-fg: black;
+	--color-light: white;
+
 	--font-family: "Finlandica Text", sans-serif;
 	--font-size: 1rem;
 	--line-height: 1.5;
