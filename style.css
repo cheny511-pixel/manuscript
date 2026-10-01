@@ -41,7 +41,7 @@ h2 {
 	font-weight: 600;
 }
 
-.op-ed:hover{
+.op-ed_link:hover{
 	color: var(--color-fg);
 	font-weight: 600;
 }
@@ -170,7 +170,7 @@ footer .link_original_article{
 	margin-block-end: var(--font-size);
 }
 
-a:not(.op-ed){
+a:not(.op-ed_link){
 	border-block-end: calc(var(--font-size)*0.3) solid var(--color-secondary);
 	font-weight: 600;
 }
@@ -200,17 +200,16 @@ body:has(#i_am_a_man:active) * {
 
 body:has(#i_am_a_man:active)::after{
 	content: "I AM A MAN";
-	font-size: calc(var(--font-size)*20);
+	font-size: calc(var(--font-size)*22);
 	font-weight: 700;
 	font-family: "Roboto Condensed", sans-serif;
 	line-height: calc(var(--line-height)*0.5);
-	padding-inline: 20%;
+	padding-inline:var(--font-size);
 	position: fixed;
-	padding-block-start:var(--font-size);
+	padding-block:var(--font-size);
 	inset:0;
 	text-align: center;
 	background-color:var(--color-bg);
-	z-index: 1;
 }
 
 /*afriCobra*/
