@@ -71,8 +71,9 @@ dt, dd {
 }
 
 main p:not(blockquote p), footer p{
-	margin-inline: calc(var(--font-size)*15);
+	margin-inline: calc(var(--font-size)*18);
 	margin-block-end: var(--font-size);
+	line-height: calc(var(--line-height)*1.4);
 }
 
 nav {
@@ -138,6 +139,19 @@ footer {
 
 body::selection {
 	background-color: var(--color-secondary);
+}
+
+a{
+	border-block-end: calc(var(--font-size)*0.3) solid var(--color-secondary);
+	font-weight: 600;
+}
+
+a:hover{
+	font-weight: 600;
+}
+
+#link_man:active{
+
 }
 
 
