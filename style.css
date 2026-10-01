@@ -165,13 +165,13 @@ body:has(#i_am_a_man:active) * {
 
 body:has(#i_am_a_man:active)::after{
 	content: "I AM A MAN";
-	color:#8f0e2e;
 	font-size: calc(var(--font-size)*20);
 	font-weight: 700;
 	font-family: "Roboto Condensed", sans-serif;
 	line-height: calc(var(--line-height)*0.5);
 	padding-inline: 20%;
 	position: fixed;
+	padding-block-start:var(--font-size);
 	inset:0;
 	text-align: center;
 	background-color:var(--color-bg);
@@ -190,4 +190,25 @@ body:has(#link_africobra:active) * {
 body:has(#link_africobra:active) mark {
 	background-color: #3579a8;
 }
+
+/*people graphic design archive*/
+body:has(#link_pgda:active) {
+	background-color: white;
+}
+body:has(#link_pgda:active) * {
+	color: #24045b;
+	border-color:#24045b;
+	font-family: "Gloria Hallelujah", cursive;
+}
+
+body:has(#link_pgda:active) mark {
+	background-color: #7cfe4e;
+	font-family: "Isometra", serif;
+}
+
+body:has(#link_pgda:active) a {
+	font-family: "Isometra", serif;
+}
+
+/*gees band quilters*/
 
