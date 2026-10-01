@@ -165,6 +165,7 @@ body:has(#i_am_a_man:active) * {
 
 body:has(#i_am_a_man:active)::after{
 	content: "I AM A MAN";
+	color:#8f0e2e;
 	font-size: calc(var(--font-size)*20);
 	font-weight: 700;
 	font-family: "Roboto Condensed", sans-serif;
@@ -178,9 +179,15 @@ body:has(#i_am_a_man:active)::after{
 }
 
 /*afriCobra*/
+body:has(#link_africobra:active) {
+	background-color:#2e263e;
+}
 body:has(#link_africobra:active) * {
 	color: #e8c958;
-	background-color:#2e263e;
 	border-color:#ae301e;
+}
+
+body:has(#link_africobra:active) mark {
+	background-color: #3579a8;
 }
 
