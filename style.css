@@ -133,3 +133,11 @@ mark{
 footer {
 	text-align:center;
 }
+
+/* pseudo element */
+
+body::selection {
+	background-color: var(--color-secondary);
+}
+
+
