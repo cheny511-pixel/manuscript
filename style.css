@@ -70,7 +70,7 @@ dt, dd {
 
 }
 
-main p{
+main p:not(blockquote p){
 	margin-inline: calc(var(--font-size)*15);
 	margin-block-end: var(--font-size);
 }
@@ -86,9 +86,10 @@ li{
 blockquote{
 	font-size: calc(var(--font-size)*2.5);
 	font-weight:700;
-	margin-inline-start: calc(var(--font-size)*15);
+	margin-inline: calc(var(--font-size)*15);
 	margin-block: calc(var(--font-size)*2);
 	border-inline-start: calc(var(--font-size)*2.5) solid var(--color-accent);
+	padding-inline:var(--font-size);
 	padding-block: var(--font-size);
 }
 
