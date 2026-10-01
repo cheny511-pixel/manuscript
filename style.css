@@ -13,7 +13,7 @@
 	--line-height: 1.5;
 }
 
-body {
+body{
 	font-size: calc(var(--font-size)*1.4);
 	color: var(--color-fg);
 	background-color: var(--color-bg);
@@ -25,6 +25,11 @@ body {
 	margin-block-start: var(--font-size);
 
 	color: var(--color-accent);
+	font-weight: 600;
+}
+
+.op-ed:hover{
+	color: var(--color-fg);
 	font-weight: 600;
 }
 
@@ -70,7 +75,7 @@ dt, dd {
 
 }
 
-main p:not(blockquote p), footer p{
+main p:not(blockquote p,.link_original_article), footer p{
 	margin-inline: calc(var(--font-size)*18);
 	margin-block-end: var(--font-size);
 	line-height: calc(var(--line-height)*1.4);
@@ -142,7 +147,7 @@ body::selection {
 	background-color: var(--color-secondary);
 }
 
-a{
+a:not(.op-ed){
 	border-block-end: calc(var(--font-size)*0.3) solid var(--color-secondary);
 	font-weight: 600;
 }
