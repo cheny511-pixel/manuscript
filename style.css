@@ -41,7 +41,7 @@ h1 {
 .dek {
 	color: var(--color-accent);
 	font-family: var(--font-family);
-	font-weight: 500;
+	font-weight: 550;
 	font-style: normal;
 	font-size: calc(var(--font-size)*1.6);
 	text-align: center;
@@ -74,6 +74,7 @@ main p:not(blockquote p), footer p{
 	margin-inline: calc(var(--font-size)*18);
 	margin-block-end: var(--font-size);
 	line-height: calc(var(--line-height)*1.4);
+	font-weight: 450;
 }
 
 nav {
@@ -147,11 +148,39 @@ a{
 }
 
 a:hover{
-	font-weight: 600;
+	color:#cf3b08;
 }
 
-#link_man:active{
-
+/*the q placard of I AM A MAN*/
+#i_am_a_man:hover{
+	color:var(--color-secondary);
+	background-color:var(--color-fg);
 }
 
+body:has(#i_am_a_man:active) * {
+	color: transparent;
+	background-color: transparent;
+	border-color:transparent;
+}
+
+body:has(#i_am_a_man:active)::after{
+	content: "I AM A MAN";
+	font-size: calc(var(--font-size)*20);
+	font-weight: 700;
+	font-family: "Roboto Condensed", sans-serif;
+	line-height: calc(var(--line-height)*0.5);
+	padding-inline: 20%;
+	position: fixed;
+	inset:0;
+	text-align: center;
+	background-color:var(--color-bg);
+	z-index: 1;
+}
+
+/*afriCobra*/
+body:has(#link_africobra:active) * {
+	color: #e8c958;
+	background-color:#2e263e;
+	border-color:#ae301e;
+}
 
