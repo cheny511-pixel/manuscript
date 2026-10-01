@@ -215,18 +215,30 @@ body:has(#link_quilters:active) {
 	background-color: white;
 }
 body:has(#link_quilters:active) * {
-	color: #24045b;
-	border-color:#24045b;
-	font-family: "Gloria Hallelujah", cursive;
+	color: black;
+	background-color:white;
 }
 
 body:has(#link_quilters:active) mark {
-	background-color: #7cfe4e;
-	font-family: "Isometra", serif;
+	background-color: #b60303;
+	padding-block: calc(var(--font-size)*5);
+	font-family: "Plaster", system-ui;
+}
+
+body:has(#link_quilters:active) em {
+	background-color: #ffa90b;
+	padding-block: calc(var(--font-size)*3);
+}
+
+body:has(#link_quilters:active) time {
+	background-color: #37daff;
+	padding-block: calc(var(--font-size)*20);
 }
 
 body:has(#link_quilters:active) a {
-	font-family: "Isometra", serif;
+	border-block-end: calc(var(--font-size)*3) solid black;
+	position: relative;
+	z-index: 10;
 }
 
 
