@@ -4,9 +4,6 @@ https://www.markdownguide.org/cheat-sheet/
 -->
 
 # Project 1: *Manuscript*
-
-Demo/template for our [first projects](https://typography-interaction-2627.github.io/project/1/).
-
-> **Students will choose a seminal design text from [readings.design](https://readings.design), read and respond to it, and typeset their selection and reply together.**
->
-> The goal of this project is to hone your basic skills in typography, focusing on expression, hierarchy, and form appropriate to a work. You will do this through exploration, trial and error, and responding to critical feedback. And then you will execute this typesetting in code, as a web page
+A typographic interpretation of “We Need Graphic Design Histories That Look Beyond the Profession” by Aggie Toppins.
+Inspired by Bauhaus print design, the site explores typography, hierarchy, color, and readability.
+Interactive states shift the visual language to reflect how looking beyond the traditional design canon can change our understanding of design.
