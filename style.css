@@ -75,7 +75,7 @@ dt, dd {
 
 }
 
-main p:not(blockquote p,.link_original_article), footer p{
+main p:not(blockquote p), footer p:not(.link_original_article){
 	margin-inline: calc(var(--font-size)*18);
 	margin-block-end: var(--font-size);
 	line-height: calc(var(--line-height)*1.4);
@@ -137,19 +137,22 @@ mark{
 }
 
 
-footer {
+footer .link_original_article{
 	text-align:center;
-}
-
-/* pseudo element */
-
-body::selection {
-	background-color: var(--color-secondary);
+	font-size: var(--font-size);
+	font-weight:600;
+	margin-block-end: var(--font-size);
 }
 
 a:not(.op-ed){
 	border-block-end: calc(var(--font-size)*0.3) solid var(--color-secondary);
 	font-weight: 600;
+}
+
+/* has: & pseudo active */
+
+body::selection {
+	background-color: var(--color-secondary);
 }
 
 a:hover{
