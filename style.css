@@ -222,7 +222,6 @@ body:has(#link_quilters:active) * {
 body:has(#link_quilters:active) mark {
 	background-color: #b60303;
 	padding-block: calc(var(--font-size)*5);
-	font-family: "Plaster", system-ui;
 }
 
 body:has(#link_quilters:active) em {
@@ -237,8 +236,6 @@ body:has(#link_quilters:active) time {
 
 body:has(#link_quilters:active) a {
 	border-block-end: calc(var(--font-size)*3) solid black;
-	position: relative;
-	z-index: 10;
 }
 
 
