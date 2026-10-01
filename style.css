@@ -1,7 +1,7 @@
 :root{
-	--color-bg: #e9e7cc /* 米白 */;
-	--color-secondary: #dd7a5a /* 珊瑚橘 */;
-	--color-accent: #cf3b08 /* 紅橘 */;
+	--color-bg: #e9e7cc;
+	--color-secondary: #dd7a5a;
+	--color-accent: #cf3b08;
 
 	--color-fg: black;
 	--color-fg-light: #666;
@@ -20,8 +20,21 @@ body{
 	margin-inline: calc(var(--font-size)*6);
 }
 
-.op-ed{
+/*DRY*/
+
+.op-ed, h1, .dek, dl, #share_link, h2, footer .link_original_article {
 	text-align: center;
+}
+
+h1,
+h2 {
+	color: var(--color-accent);
+	font-family: var(--font-family-title);
+	font-weight: 400;
+	font-style: normal;
+}
+
+.op-ed{
 	margin-block-start: var(--font-size);
 
 	color: var(--color-accent);
@@ -34,13 +47,8 @@ body{
 }
 
 h1 {
-	color: var(--color-accent);
-	font-family: var(--font-family-title);
-	font-weight: 400;
-	font-style: normal;
 	font-size: calc(var(--font-size)*5);
 	text-transform: uppercase;
-	text-align: center;
 	border-block-start: var(--font-size) solid var(--color-accent);
 	margin-block-start: calc(var(--font-size)*1);
 	padding-block: calc(var(--font-size)*2);
@@ -52,15 +60,13 @@ h1 {
 	font-weight: 550;
 	font-style: normal;
 	font-size: calc(var(--font-size)*1.6);
-	text-align: center;
 	padding-block-start: calc(var(--font-size)*0.5);
 	padding-block-end: calc(var(--font-size)*2);
 	border-block-start: calc(var(--font-size)*2) solid var(--color-accent);
-	border-block-end: calc(var(--font-size)) double var(--color-fg);
+	border-block-end: calc(var(--font-size)*0.8) double var(--color-fg);
 }
 
 dl{
-	text-align: center;
 	margin-block-start:calc(var(--font-size)*0.2);
 	margin-block-end: calc(var(--font-size)*2);
 }
@@ -88,10 +94,6 @@ main p:not(blockquote p, #share_link p), footer p:not(.link_original_article){
 	font-weight: 450;
 }
 
-#share_link {
-	text-align: center;
-}
-
 #share_link p {
 	font-weight: 500;
 }
@@ -114,13 +116,8 @@ blockquote{
 }
 
 h2 {
-	text-align: center;
 	border-block-end:calc(var(--font-size)*0.8)double var(--color-fg);
 	margin-inline: var(--font-size);
-	color: var(--color-accent);
-	font-family: var(--font-family-title);
-	font-weight: 400;
-	font-style: normal;
 	font-size: calc(var(--font-size)*3);
 }
 
@@ -137,16 +134,20 @@ mark{
 	font-size: calc(var(--font-size)*1.2);
 }
 
-.response_nav{
+/*DRY*/
+.response_nav,
+.article_nav {
+	font-size: calc(var(--font-size) * 1.2);
 	position: fixed;
+	inset-inline-end: var(--font-size);
+}
+
+.response_nav{
 	inset-block-start: var(--font-size);
-    inset-inline-end: var(--font-size);
 }
 
 .article_nav{
-	position: fixed;
 	inset-block-end: var(--font-size);
-	inset-inline-end: var(--font-size);
 }
 #article{
 	margin-block-end: calc(var(--font-size)*4);
@@ -164,7 +165,6 @@ mark{
 
 
 footer .link_original_article{
-	text-align:center;
 	font-size: calc(var(--font-size)*1.2);
 	font-weight:600;
 	margin-block-end: var(--font-size);
