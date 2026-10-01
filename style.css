@@ -41,6 +41,9 @@ h1 {
 	font-size: calc(var(--font-size)*5);
 	text-transform: uppercase;
 	text-align: center;
+	border-block-start: var(--font-size) solid var(--color-accent);
+	margin-block-start: calc(var(--font-size)*1.5);
+	padding-block: calc(var(--font-size)*2);
 }
 
 .dek {
@@ -50,9 +53,11 @@ h1 {
 	font-style: normal;
 	font-size: calc(var(--font-size)*1.6);
 	text-align: center;
-	margin-block: var(--font-size);
-	padding-block: calc(var(--font-size)*1.5);
-	border-block: calc(var(--font-size)*0.2) solid var(--color-fg);
+	margin-block-end: var(--font-size);
+	padding-block-start: calc(var(--font-size)*0.5);
+	padding-block-end: calc(var(--font-size)*2);
+	border-block-start: calc(var(--font-size)*2) solid var(--color-accent);
+	border-block-end: calc(var(--font-size)*0.2) solid var(--color-fg);
 }
 
 dl{
@@ -139,7 +144,7 @@ mark{
 
 footer .link_original_article{
 	text-align:center;
-	font-size: var(--font-size);
+	font-size: calc(var(--font-size)*1.2);
 	font-weight:600;
 	margin-block-end: var(--font-size);
 }
@@ -152,7 +157,8 @@ a:not(.op-ed){
 /* has: & pseudo active */
 
 body::selection {
-	background-color: var(--color-secondary);
+	color:var(--color-bg);
+	background-color: var(--color-accent);
 }
 
 a:hover{
