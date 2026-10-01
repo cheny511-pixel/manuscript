@@ -56,7 +56,7 @@ h1 {
 	padding-block-start: calc(var(--font-size)*0.5);
 	padding-block-end: calc(var(--font-size)*2);
 	border-block-start: calc(var(--font-size)*2) solid var(--color-accent);
-	border-block-end: calc(var(--font-size)*0.2) solid var(--color-fg);
+	border-block-end: calc(var(--font-size)) double var(--color-fg);
 }
 
 dl{
@@ -115,7 +115,7 @@ blockquote{
 
 h2 {
 	text-align: center;
-	border-block-end:calc(var(--font-size)*0.5)double var(--color-fg);
+	border-block-end:calc(var(--font-size)*0.8)double var(--color-fg);
 	margin-inline: var(--font-size);
 	color: var(--color-accent);
 	font-family: var(--font-family-title);
