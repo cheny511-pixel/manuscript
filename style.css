@@ -81,19 +81,26 @@ dt, dd {
 
 }
 
-main p:not(blockquote p), footer p:not(.link_original_article){
+main p:not(blockquote p, #share_link p), footer p:not(.link_original_article){
 	margin-inline: calc(var(--font-size)*18);
 	margin-block-end: var(--font-size);
 	line-height: calc(var(--line-height)*1.4);
 	font-weight: 450;
 }
 
-nav {
+#share_link {
 	text-align: center;
 }
 
-li{
+#share_link p {
+	font-weight: 500;
+}
+
+#share_link li{
 	display: inline-block;
+	margin-inline: calc(var(--font-size)*0.5);
+	margin-block-start: calc(var(--font-size)*0.5);
+	margin-block-end: calc(var(--font-size)*3);
 }
 
 blockquote{
@@ -140,6 +147,11 @@ mark{
 	position: fixed;
 	inset-block-end: var(--font-size);
 	inset-inline-end: var(--font-size);
+}
+
+#response{
+	margin-block-start: calc(var(--font-size)*3);
+	margin-block-end: calc(var(--font-size)*4);
 }
 
 
