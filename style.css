@@ -42,7 +42,7 @@ h1 {
 	text-transform: uppercase;
 	text-align: center;
 	border-block-start: var(--font-size) solid var(--color-accent);
-	margin-block-start: calc(var(--font-size)*1.5);
+	margin-block-start: calc(var(--font-size)*1);
 	padding-block: calc(var(--font-size)*2);
 }
 
@@ -53,7 +53,6 @@ h1 {
 	font-style: normal;
 	font-size: calc(var(--font-size)*1.6);
 	text-align: center;
-	margin-block-end: var(--font-size);
 	padding-block-start: calc(var(--font-size)*0.5);
 	padding-block-end: calc(var(--font-size)*2);
 	border-block-start: calc(var(--font-size)*2) solid var(--color-accent);
@@ -62,12 +61,14 @@ h1 {
 
 dl{
 	text-align: center;
-	margin-block: calc(var(--font-size)*2);
+	margin-block-start:calc(var(--font-size)*0.2);
+	margin-block-end: calc(var(--font-size)*2);
 }
 
 dt, dd {
 	display: inline-block;
-	font-weight: 500;
+	font-weight: 450;
+	font-size:var(--font-size);
 }
 
 #published::before {
