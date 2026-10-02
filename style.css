@@ -176,6 +176,10 @@ a:not(.op-ed_link){
 }
 
 /* has: & pseudo active */
+/*
+Visual references for different styles:
+https://docs.google.com/presentation/d/1oR-tLQ2AU51IURh_tOpTTmyrB9A4zF8D9ebBetUrUMo/edit?usp=sharing
+*/
 
 body::selection {
 	color:var(--color-bg);
