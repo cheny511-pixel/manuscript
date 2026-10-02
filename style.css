@@ -186,7 +186,7 @@ a:hover{
 	color:#cf3b08;
 }
 
-/*the q placard of I AM A MAN*/
+/*the q placard of I AM A MAN, still fixing it >"< */
 #i_am_a_man:hover{
 	color:var(--color-secondary);
 	background-color:var(--color-fg);
@@ -204,10 +204,9 @@ body:has(#i_am_a_man:active)::after{
 	font-weight: 700;
 	font-family: "Roboto Condensed", sans-serif;
 	line-height: calc(var(--line-height)*0.5);
-	padding-inline:calc(var(--font-size)*3);
+	padding-inline:calc(var(--font-size)*10);
 	position: fixed;
 	padding-block:var(--font-size);
-	inset:0;
 	text-align: center;
 	background-color:var(--color-bg);
 }
@@ -232,16 +231,14 @@ body:has(#link_pgda:active) {
 body:has(#link_pgda:active) * {
 	color: #24045b;
 	border-color:#24045b;
-	font-family: "Gloria Hallelujah", cursive;
+}
+
+body:has(#link_pgda:active) a {
+	background-color: #7cfe4e;
 }
 
 body:has(#link_pgda:active) mark {
 	background-color: #7cfe4e;
-	font-family: "Isometra", serif;
-}
-
-body:has(#link_pgda:active) a {
-	font-family: "Isometra", serif;
 }
 
 /*gees band quilters*/
