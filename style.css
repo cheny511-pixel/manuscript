@@ -235,10 +235,12 @@ body:has(#link_pgda:active) {
 body:has(#link_pgda:active) * {
 	color: #24045b;
 	border-color:#24045b;
+	font-family: "Gloria Hallelujah", cursive;
 }
 
 body:has(#link_pgda:active) a {
 	background-color: #7cfe4e;
+	font-family: "Isometra", serif;
 }
 
 body:has(#link_pgda:active) mark {
