@@ -212,6 +212,8 @@ body:has(#i_am_a_man:active)::after{
 	position: fixed;
 	padding-block:var(--font-size);
 	text-align: center;
+	inset: 0;
+	z-index: 999;
 	background-color:var(--color-bg);
 }
 
