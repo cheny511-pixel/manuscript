@@ -222,9 +222,20 @@ body:has(#i_am_a_man:active)::after{
 }
 
 /*afriCobra*/
+
 body:has(#link_africobra:active) {
-	background-color:#2e263e;
+	--color-bg: #e9e7cc;
+
+	& * {
+		color:#e8c958;
+		border-color:#ae301e;
+	}
+	& mark {
+	background-color: #3579a8;
+	}
 }
+
+/*
 body:has(#link_africobra:active) * {
 	color: #e8c958;
 	border-color:#ae301e;
@@ -233,6 +244,8 @@ body:has(#link_africobra:active) * {
 body:has(#link_africobra:active) mark {
 	background-color: #3579a8;
 }
+*/
+
 
 /*people graphic design archive*/
 body:has(#link_pgda:active) {
