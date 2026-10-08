@@ -224,12 +224,13 @@ body:has(#i_am_a_man:active)::after{
 /*afriCobra*/
 
 body:has(#link_africobra:active) {
-	--color-bg: #e9e7cc;
+	--color-bg: #2e263e;
+	--color-fg: #e8c958;
 
 	& * {
-		color:#e8c958;
 		border-color:#ae301e;
 	}
+
 	& mark {
 	background-color: #3579a8;
 	}
